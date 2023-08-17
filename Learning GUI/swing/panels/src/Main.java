@@ -1,6 +1,4 @@
-import javax.swing.BorderFactory;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 import java.awt.Color;
 
 public class Main {
@@ -8,6 +6,8 @@ public class Main {
         JFrame frame = new JFrame("Panels - course");
         JPanel panel = new JPanel();
         JPanel panel2 = new JPanel();
+        JLabel label = new JLabel();
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setSize(1000, 600);
@@ -21,7 +21,10 @@ public class Main {
         panel2.setBackground(new Color(0,255,0));
         panel2.setBounds(250,250,250,250);
         panel2.setBorder(BorderFactory.createMatteBorder(0, 0, 2, 2, Color.BLACK));
-
         frame.add(panel2);
+
+        label.setText("Hello! It's me, first panel");
+        panel.add(label);
+        label.setHorizontalTextPosition(JLabel.CENTER);
     }
 }
