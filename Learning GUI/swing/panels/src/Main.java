@@ -1,7 +1,7 @@
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.*;
+import java.awt.Color;
 
 public class Main {
     public static void main(String[] args) {
