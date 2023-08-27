@@ -1,5 +1,9 @@
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,6 +11,11 @@ public class Main {
         frame.setSize(1000, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout(FlowLayout.LEADING, 5, 5));
+
+        JPanel panel = new JPanel();
+        panel.setPreferredSize(new Dimension(400, 250));
+        panel.setBackground(Color.YELLOW);
+        panel.setLayout(new FlowLayout());
 
         JButton button = new JButton("Click me!");
         JButton button2 = new JButton("Click me!");
@@ -16,13 +25,15 @@ public class Main {
         JButton button6 = new JButton("Click me!");
         JButton button7 = new JButton("Click me!");
 
-        frame.add(button);      /*or frame.add(new JButton("1"))*/
-        frame.add(button2);
-        frame.add(button3);
-        frame.add(button4);
-        frame.add(button5);
-        frame.add(button6);
-        frame.add(button7);
+        panel.add(button);      /*or frame.add(new JButton("1"))*/
+        panel.add(button2);
+        panel.add(button3);
+        panel.add(button4);
+        panel.add(button5);
+        panel.add(button6);
+        panel.add(button7);
+
+        frame.add(panel);
         frame.setVisible(true);
     }
 }
