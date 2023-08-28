@@ -6,7 +6,7 @@ public class Main {
         JFrame frame = new JFrame("GridLayouts - course");
         frame.setSize(1000, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new GridLayout(2,3));
+        frame.setLayout(new GridLayout(2,3,5,5));
 
 
         frame.add(new JButton("First button"));
