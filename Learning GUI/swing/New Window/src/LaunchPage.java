@@ -1,9 +1,10 @@
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LaunchPage implements ActionListener {
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("First Window");
     JButton button = new JButton("Click me!");
     LaunchPage(){
         frame.setSize(1000,500);
@@ -21,6 +22,7 @@ public class LaunchPage implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
+            frame.dispose();
             NewWindow newWindow = new NewWindow();
         }
     }
