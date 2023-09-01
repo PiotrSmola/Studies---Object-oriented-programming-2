@@ -1,12 +1,12 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null,"Some extremely important information","Fancy Title",JOptionPane.PLAIN_MESSAGE);
-        JOptionPane.showMessageDialog(null,"Some extremely important information","Fancy Title",JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showMessageDialog(null,"Some extremely important information","Fancy Title",JOptionPane.QUESTION_MESSAGE);
-        JOptionPane.showMessageDialog(null,"Some extremely important information","Fancy Title",JOptionPane.WARNING_MESSAGE);
-        JOptionPane.showMessageDialog(null,"Some extremely important information","Fancy Title",JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Some extremely important information", "Fancy Title", JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Some extremely important information", "Fancy Title", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Some extremely important information", "Fancy Title", JOptionPane.QUESTION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Some extremely important information", "Fancy Title", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Some extremely important information", "Fancy Title", JOptionPane.ERROR_MESSAGE);
 
         JOptionPane.showConfirmDialog(null, "Yes or No?", "Confirmation", JOptionPane.YES_NO_OPTION);
         System.out.println(JOptionPane.showConfirmDialog(null, "Yes or No?", "Confirmation", JOptionPane.YES_NO_OPTION));
@@ -15,6 +15,8 @@ public class Main {
         String age = JOptionPane.showInputDialog("How old are you?: ");
         System.out.println(age);
 
+        String[] responses = {"No, you're awesome", "Thank you"};
+        JOptionPane.showOptionDialog(null, "You're awesome", "Amazing Message", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, responses, 0);
 
 
     }
