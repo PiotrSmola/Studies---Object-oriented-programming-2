@@ -18,6 +18,7 @@ public class MyFrame extends JFrame implements ActionListener {
         textField.setBackground(Color.BLACK);
         textField.setCaretColor(Color.white);
         textField.setText("Enter your name");
+        textField.setEditable(true);
         this.add(textField);
 
         button.addActionListener(this);
@@ -31,6 +32,8 @@ public class MyFrame extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
             System.out.println("Welcome Mr./Ms. " + textField.getText());
+            button.setEnabled(false);
+            textField.setEditable(false);
         }
     }
 }
