@@ -14,8 +14,13 @@ MyFrame() {
         this.setLayout(new FlowLayout());
 
         firstButton = new JRadioButton("First");
+        firstButton.addActionListener(this);
         secondButton = new JRadioButton("Second");
+        secondButton.addActionListener(this);
         thirdButton = new JRadioButton("Third");
+        thirdButton.addActionListener(this);
+
+        //also can change the default icon to custom icon
 
         ButtonGroup group = new ButtonGroup();
 
