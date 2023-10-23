@@ -1,5 +1,4 @@
 package Temperatura;
-
 import javax.swing.*;
 
 public class konwersjaTemperatury extends JFrame {

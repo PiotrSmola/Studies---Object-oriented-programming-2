@@ -69,7 +69,7 @@
               </component>
               <component id="e42e7" class="javax.swing.JTextField" binding="textField2" default-binding="true">
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="4" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
                   </grid>
                 </constraints>
@@ -107,8 +107,9 @@
             </constraints>
             <properties>
               <editable value="false"/>
-              <enabled value="false"/>
+              <enabled value="true"/>
               <focusable value="false"/>
+              <foreground color="-16777216"/>
               <margin top="4" left="12" bottom="4" right="12"/>
             </properties>
           </component>
