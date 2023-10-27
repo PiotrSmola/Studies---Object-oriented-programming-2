@@ -18,9 +18,6 @@ public class Kursy extends JFrame {
         kurs.setVisible(true);
     }
 
-    String user = "admin";
-    String password = "admin";
-
     public Kursy() {
         super("Bootcamp");
         this.setContentPane(this.panel1);
