@@ -16,7 +16,7 @@ public class RadioButtonSystem extends JFrame {
     private ImageIcon iconWindows = new ImageIcon(getClass().getResource("windows.png"));
     private ImageIcon iconMaciontosh = new ImageIcon(getClass().getResource("macintosh.png"));
 
-    private static ImageIcon resize(ImageIcon src, int destWidth, int destHeight){
+    private static ImageIcon resize(ImageIcon src, int destWidth, int destHeight) {
         return new ImageIcon(src.getImage().getScaledInstance(destWidth, destHeight, Image.SCALE_SMOOTH));
     }
 
@@ -29,14 +29,14 @@ public class RadioButtonSystem extends JFrame {
         super("System selection");
         this.setContentPane(this.panel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(300,300);
+        this.setSize(300, 300);
 
 
         linuxRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (linuxRadioButton.isSelected()){
-                    JLabelImage.setIcon(resize(iconLinux, 120,120));
+                if (linuxRadioButton.isSelected()) {
+                    JLabelImage.setIcon(resize(iconLinux, 120, 120));
                 }
 
             }
@@ -55,16 +55,16 @@ public class RadioButtonSystem extends JFrame {
         windowsRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (windowsRadioButton.isSelected()){
-                    JLabelImage.setIcon(resize(iconWindows, 120,120));
+                if (windowsRadioButton.isSelected()) {
+                    JLabelImage.setIcon(resize(iconWindows, 120, 120));
                 }
             }
         });
         macintoshRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (macintoshRadioButton.isSelected()){
-                    JLabelImage.setIcon(resize(iconMaciontosh, 120,120));
+                if (macintoshRadioButton.isSelected()) {
+                    JLabelImage.setIcon(resize(iconMaciontosh, 120, 120));
                 }
             }
         });

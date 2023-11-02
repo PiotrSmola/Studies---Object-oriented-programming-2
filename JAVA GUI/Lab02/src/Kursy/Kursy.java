@@ -45,7 +45,7 @@ public class Kursy extends JFrame {
                     message += "C++ #price 4000PLN\n";
                 }
                 message += "======================================\n";
-                JOptionPane.showMessageDialog(null, message + "Razem: " + ((int) price)+"PLN");
+                JOptionPane.showMessageDialog(null, message + "Razem: " + ((int) price) + "PLN");
             }
         });
     }

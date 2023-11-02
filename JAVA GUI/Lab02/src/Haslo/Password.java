@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Password extends JFrame{
+public class Password extends JFrame {
     private JPanel JPanel1;
     private JTextField textName;
     private JPasswordField passwordField1;
@@ -15,13 +15,15 @@ public class Password extends JFrame{
         Password password = new Password();
         password.setVisible(true);
     }
+
     String user = "admin";
     String password = "admin";
-    public Password(){
+
+    public Password() {
         super("Login panel");
         this.setContentPane(this.JPanel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(450,200);
+        this.setSize(450, 200);
         buttonLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,8 +32,7 @@ public class Password extends JFrame{
 
                 if (userInput.equals(user) && userPassword.equals(password)) {
                     JLabelOutput.setText("Zalogowano do systemu");
-                }
-                else {
+                } else {
                     JLabelOutput.setText("Podano błędne dane. Spróbuj ponownie");
                     textName.setText("");
                     passwordField1.setText("");
