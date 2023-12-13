@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1.TASK3
+namespace Lab1
 {
 
     public class Wypisywanie
